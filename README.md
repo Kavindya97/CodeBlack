@@ -4,7 +4,7 @@
 Accurately recognizing the total bill amount from scanned bills/inovice images.
 
 ## Data Set
-Data set included for this taks consists of 650 scanned bills / invovices in PNG format, all of them  labeled with the final total value of each bill.
+Data set included for this task consists of 600 scanned bills / invoices in PNG format, all of them  labeled with the final total value of each bill.
 
 #### Sample invoice
 
@@ -26,7 +26,7 @@ Data set included for this taks consists of 650 scanned bills / invovices in PNG
 ## Expected Solution
 #### Functional Requirement 
 
-An employee in the accounts department should be able to upload/submit a set of images consisting of invoices and get the total value of submitted invoices. (Developing upload/submit functionality is not a must. Copying a set of images to a source directory is acceptable). 
+A user should be able to upload/submit a set of images consisting of invoices and get the total value of submitted invoices. (Developing upload/submit functionality is not a must. Copying a set of images to a source directory is acceptable). 
 
 **We are expecting existing OCR image-to-text extraction methods and implementations, to be re-used to extract the features from the images**
 
@@ -55,17 +55,6 @@ With pre-processing, its expected **that existing OCR image to text extraction m
 Apply the trained model on a validation dataset and produce and present the results.
 
 
-#### Presentation
-
-* Methods used for pre-processing data 
-
-* The Model/s used 
-
-* Evaluation metrices : eg : F1 scores , confusion metrix
-
-* Result from validation dataset
-
-
 #### Output 
 
 Output should be in the following format as a CSV saved to output file. Output should be logged to console in following format (No need to draw a table. Output should be well formatted).  
@@ -76,13 +65,42 @@ Output should be in the following format as a CSV saved to output file. Output s
 |Invoice_2.jpeg|97|
 | *Grand Total* |129| 
 
+
+#### Presentation
+
+* All teams should share a working source code with one of the following method
+    * Link to public github repository (Preferred) 
+    * ipython notebook if you are using Jupyter
+    * Kaggle notebook
+    * Google Colab notebook
+    * Any other resource
+
+* Explain methods used for pre-processing data 
+
+* Explain the Model/s used, and reason to select the particular model.
+
+* Result from validation dataset
+
+* Reason out the results with evaluation matrices : eg : F1 scores , confusion matrix
+
+
 ## Evaluation Criteria 
+A new set of files (excluding the given training set) will be used to evaluate the prediction accuracy.
 
-* All teams should submit a working application that satisfies the functional and technical requirements. 
+#### Marking scheme
 
-* A new set of files (excluding training set) will be used to evaluate the prediction accuracy.
-
-* Re-usability of this model on a general scanned bill/invioce image will be evaluated. 
+* Accuracy (70% Total)
+    * A working, reusable model with high precision (40%)
+    * Implementation of functional requirements (10%)
+    * Pre-processing of data (10%)
+    * Code quality (10%)
+        * Readability
+        * Best practices
+* Presentation (10%)
+    * Method explanation
+    * Identified challenges
+    * Compare the results with ground truth
+* Q & A (20%)
 
 
 ## Background 
